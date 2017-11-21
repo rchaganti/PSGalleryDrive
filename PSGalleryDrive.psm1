@@ -2,10 +2,7 @@ using namespace Microsoft.PowerShell.SHiPS
 
 [SHiPSProvider()]
 class PSGRoot : SHiPSDirectory
-{
-    # static member to keep track of CIM sessions
-    static [System.Collections.Generic.List``1[Microsoft.Management.Infrastructure.CimSession]] $sessions
-    
+{  
     # Default constructor
     PSGRoot([string]$name):base($name)
     {
