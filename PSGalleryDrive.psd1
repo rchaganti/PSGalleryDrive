@@ -98,7 +98,7 @@ PrivateData = @{
         Tags = 'Navigation','SHiPS','PSGet','PowerShell Gallery'
 
         # A URL to the license for this module.
-        LicenseUri = 'https://github.com/rchaganti/PSGalleryDrive/blob/master/LICENSE.txt'
+        LicenseUri = 'https://github.com/rchaganti/PSGalleryDrive/blob/master/LICENSE'
 
         # A URL to the main website for this project.
         ProjectUri = 'https://github.com/rchaganti/PSGalleryDrive'
@@ -107,7 +107,7 @@ PrivateData = @{
         # IconUri = ''
 
         # ReleaseNotes of this module
-        ReleaseNotes = 'https://github.com/rchaganti/PSGalleryDrive/blob/master/Readme.md
+        ReleaseNotes = 'https://github.com/rchaganti/PSGalleryDrive/blob/master/Readme.md'
         # ExternalModuleDependencies = ''
 
     } # End of PSData hashtable
