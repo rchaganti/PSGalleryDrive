@@ -1,6 +1,6 @@
 using namespace Microsoft.PowerShell.SHiPS
 
-[SHiPSProvider()]
+[SHiPSProvider(UseCache = $true)]
 class PSGRoot : SHiPSDirectory
 {  
     # Default constructor
@@ -20,7 +20,7 @@ class PSGRoot : SHiPSDirectory
 }
 
 #region DSC Resources
-[SHiPSProvider()]
+[SHiPSProvider(UseCache = $true)]
 class DSCResources : SHiPSDirectory
 {
     DSCResources([string]$name):base($name)
@@ -40,7 +40,7 @@ class DSCResources : SHiPSDirectory
     }
 }
 
-[SHiPSProvider()]
+[SHiPSProvider(UseCache = $true)]
 class PSDSCResource : SHiPSDirectory
 {
     PSDSCResource([string]$name):base($name)
@@ -63,7 +63,7 @@ class PSDSCResource : SHiPSDirectory
 #endregion
 
 #region modules
-[SHiPSProvider()]
+[SHiPSProvider(UseCache = $true)]
 class Modules : SHiPSDirectory
 {    
     Modules([string]$name):base($name)
@@ -83,7 +83,7 @@ class Modules : SHiPSDirectory
     }
 }
 
-[SHiPSProvider()]
+[SHiPSProvider(UseCache = $true)]
 class PSModule : SHiPSDirectory
 {
     PSModule([string]$name):base($name)
@@ -106,7 +106,7 @@ class PSModule : SHiPSDirectory
 #endregion
 
 #region scripts
-[SHiPSProvider()]
+[SHiPSProvider(UseCache = $true)]
 class Scripts : SHiPSDirectory
 {    
     Scripts([string]$name):base($name)
@@ -126,7 +126,7 @@ class Scripts : SHiPSDirectory
     }
 }
 
-[SHiPSProvider()]
+[SHiPSProvider(UseCache = $true)]
 class PSScript : SHiPSDirectory
 {
     PSScript([string]$name):base($name)
